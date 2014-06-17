@@ -19,4 +19,49 @@ def clip(lo, x, hi):
      - x, otherwise (i.e., x > lo and x < hi)
     '''
     return min(max(lo, x), hi)
+ 
+# L4 Problem 8       
+def fourthPower(x):
+    '''
+    Takes in one number and returns it raised to the fourth power.
+    x: int or float.
+    '''
+    return square(square(x))
+    
+# L4 Problem 9
+def odd(x):
+    '''
+    x: int or float.
+
+    returns: True if x is odd, False otherwise
+    '''
+    return bool(x%2)
+
+# L4 Problem 10
+def isVowel(char):
+    '''
+    char: a single letter of any case
+
+    returns: True if char is a vowel and False otherwise.
+    '''
+    char = char.lower()
+    return ( (char == 'a') or \
+            (char == 'e') or \
+            (char == 'i') or \
+            (char == 'o') or \
+            (char == 'u') )
+            
+# L4 Problem 11
+def isVowel2(char):
+    '''
+    char: a single letter of any case
+
+    returns: True if char is a vowel and False otherwise.
+    '''
+    char = char.lower()
+    return char in ('aeiou')
+    
+# L4 Problem 12
+str1 = 'exterminate!'
+str2 = 'number one - the larch'
     
